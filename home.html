@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<title>Your work</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<script>
+	function clearText(thefield){
+	if (thefield.defaultValue==thefield.value) 
+		thefield.value = "";
+}
+</script>
+<body>
+	<p class="text"></p>
+	<audio autoplay="autoplay" loop="loop">
+    	<source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+    	<source src="audio/music.mp3" type="audio/mpeg">
+  	</audio>
+  
+
+
+
+
+    <div class="test">
+        <div class="first-question">
+            <span>1.Скільки вам років?</span><br/>
+            
+        <input type="text" size="40" id="first-input">
+
+        </div>
+        
+
+
+
+
+        <div class="first-question">
+        <hr>
+            <span>2. Введіть вашу вагу тіла(в кг.) та зріст(у см.)</span><br>
+            
+            <input type="text" size="40" id="input-text" value="Вага" onfocus="clearText(this)"> 
+            <input type="text" size="40" id="input-text" value="Зріст" onfocus="clearText(this)">
+        </div>
+
+
+
+
+
+
+
+
+        <div class="first-question">
+        <hr>
+            <span>3. Ви палите?</span>
+            
+            <div >
+            <input type="radio" name="radio3" id="radio9" class="radio" value="0" />
+            <label for="radio9">Так</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio3" id="radio10" class="radio" value="30" />
+            <label for="radio10">Ні</label>
+            </div>
+        </div>
+
+        <div class="first-question">
+        <hr>
+            <span>4. Який ваш пульс у стані спокою?(уд. в хв.)</span><br>
+            
+             <input type="text" size="40" id="input-text" id="fourth" >
+        </div>
+
+        <div class="first-question" >
+        <hr>
+            <span >5. Пульс після фізичних навантажень?(через 4 хв. спокою)</span>
+            
+            <input type="text" size="40" id="input-text" >
+        </div>
+
+        <div class="first-question">
+        <hr>
+            <span>6. Ви регулярно займаєтеся спортом?</span>
+            
+            <div>
+            <input type="radio" name="radio4" id="radio15" class="radio" />
+            <label for="radio15">Так</label>
+            </div>
+            <div>
+            <input type="radio" name="radio4" id="radio6" class="radio"/>
+            <label for="radio6">Ні</label>
+            </div>
+            
+        </div><br><br><br><br>
+
+        
+       
+        <button class="Result" OnClick="Global();">Завершити тест</button>
+    <div>
+<script >
+function Global(){
+  	
+  	var SCORE1=0;
+
+ 	
+		var fisrtInput = document.getElementsByTagName("input")[0];
+		var valFirstInput = fisrtInput.value;
+		if (valFirstInput<=20){/*******************BAGGGGGGGGGGGG*********/
+			SCORE1=SCORE1+Number(valFirstInput);
+		}
+		if(valFirstInput<40 && valFirstInput>20)
+			{
+				SCORE1=SCORE1+20;
+			}
+		if(valFirstInput>=40 && valFirstInput<=80){
+				var local = Number(valFirstInput - 40);
+				SCORE1= SCORE1+40-local;
+			}
+
+		/**************************************/
+var SCORE2=0;
+ 	var VagaInput = document.getElementsByTagName("input")[1];
+ 	var valVagaInput = VagaInput.value;
+ 	var HeightInput = document.getElementsByTagName("input")[2];
+ 	var valHeightInput = HeightInput.value;
+ 	var MustBe = valHeightInput - 100;
+ 	if(valVagaInput>(MustBe+5)){
+ 		SCORE2=SCORE2-30;
+ 	}
+ 	if((valVagaInput>MustBe-10)&&(valVagaInput>MustBe-5)){
+ 		SCORE2=SCORE2+5;
+ 	}
+
+
+ 	/***************************************************/
+ 	var SCORE3=0;
+ 	var azaz = document.getElementById("radio10").checked;
+ 	if (azaz){
+ 		SCORE3=SCORE3+30;
+ 	}
+ 	/****************************************************/
+ 	var SCORE4=0;
+
+    
+        var PulsInput = document.getElementsByTagName("input")[5];
+        var valPulsInput = PulsInput.value;
+        if (valPulsInput<=90){
+           
+             var localization = 90 - valPulsInput;
+            SCORE4=localization;
+        }
+        else{
+            SCORE4=-(Number(valPulsInput)-90);
+
+        }
+/****************************************************/
+var SCORE5=0;
+
+    
+        var PulsVostInput = document.getElementsByTagName("input")[6];
+        var valPulsVostInput = PulsVostInput.value;
+        if (valPulsVostInput==valPulsInput){
+           
+           SCORE5=30;
+        }
+        else{
+            localization=0;
+            SCORE5=30-(valPulsVostInput - valPulsInput);
+
+        }
+/***************************************************/
+var SCORE6=0;
+
+    var SportInput = document.getElementById("radio15").checked;
+    if(SportInput){
+        SCORE6=10;
+    }
+    else{
+        SCORE6=-20;
+    }
+
+
+var SCORE=SCORE1+SCORE2+SCORE3+SCORE4+SCORE5+SCORE6+7;
+if (SCORE>=101){
+    confirm("Оптимальний рівень здоров’я і адаптації, відмінний стан здоров’я");
+}
+else if(SCORE>=61){
+    confirm("Хороший рівень здоров’я і адаптації");
+}
+else if(SCORE>=41){
+    confirm("Задовільний рівень здоров’я  з порушенням механізмів адаптації");
+}
+else if(SCORE>=21){
+    confirm("Незадовільний рівень здоров’я  з недостатньою адаптацією, практично  здоров");
+}
+else if(SCORE<20){
+    confirm("Незадовільний рівень здоров’я  зі зривом адаптації, перед хвороба");
+}
+
+
+}
+
+</script>
+</body>
+</html>

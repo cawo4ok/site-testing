@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<title>Your work</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<script>
+	function clearText(thefield){
+	if (thefield.defaultValue==thefield.value) 
+		thefield.value = "";
+}
+</script>
+<body>
+	<p class="text"></p>
+	<audio autoplay="autoplay" loop="loop">
+    	<source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+    	<source src="audio/music.mp3" type="audio/mpeg">
+  	</audio>
+  
+
+
+
+
+    <div id="test">
+      <div class="first-question"><span>Тест проходить</span><br>
+      	<span id="name-people"></span><br>
+            <span>1.Ви любите працювати в команді?</span><br/>
+             <div >
+            <input type="radio" name="radio1" id="radio11" class="radio" />
+            <label for="radio11">Так</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio1" id="radio12" class="radio" />
+            <label for="radio12">Ні</label>
+            </div>
+        </div>
+        
+
+
+
+
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>2. Якого типу ваше хоббі?</span><br>
+            <div >
+                <input type="radio" name="radio2" id="radio21" class="radio" value="0" />
+                <label for="radio21">Спортивне</label>
+            </div>
+
+            <div>
+                <input type="radio" name="radio2" id="radio22" class="radio" value="30" />
+                <label for="radio22">Розважальне</label>
+            </div>
+
+             <div>
+                <input type="radio" name="radio2" id="radio23" class="radio" value="30" />
+                <label for="radio23">Розвиваюче</label>
+            </div>
+
+             <div>
+                <input type="radio" name="radio2" id="radio24" class="radio" value="30" />
+                <label for="radio24">Інтелектуальне</label>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>3.Як ви відноситеся до наркотиків?</span>
+            
+            <div >
+            <input type="radio" name="radio3" id="radio31" class="radio" value="0" />
+            <label for="radio31">Різко негативно</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio3" id="radio32" class="radio" value="30" />
+            <label for="radio32">Помірно</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio3" id="radio33" class="radio" value="30" />
+            <label for="radio33">Добре</label>
+            </div>
+        </div>
+
+       
+
+
+
+
+
+        <div class="first-question" >
+        <hr><span id="name-people"></span>
+            <span >4. Введіть ваш IQ.</span>
+            
+            <input type="text" size="40" id="input-text" >
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>5. Виберіть 1 інтернет технологію, яку ви знаєте найкраще.</span>
+            
+            <div>
+            <input type="radio" name="radio4" id="radio41" class="radio" />
+            <label for="radio41">Html</label>
+            </div>
+            <div>
+            <input type="radio" name="radio4" id="radio42" class="radio"/>
+            <label for="radio42">CSS</label>
+            </div>
+            <div>
+            <input type="radio" name="radio4" id="radio43" class="radio"/>
+            <label for="radio43">EcmaScript</label>
+            </div>
+            <div>
+            <input type="radio" name="radio4" id="radio44" class="radio"/>
+            <label for="radio44">Php</label>
+            </div>
+
+        </div>
+    
+
+
+
+
+         <div class="first-question">
+         <hr><span id="name-people"></span>
+            <span>6. У вас є права на автомобіль?</span><br/>
+             <div >
+            <input type="radio" name="radio5" id="radio51" class="radio" value="0" />
+            <label for="radio51">Так</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio5" id="radio52" class="radio" value="30" />
+            <label for="radio52">Ні</label>
+            </div>
+        </div>
+
+
+
+        
+        
+        <div class="first-question" >
+        <hr><span id="name-people"></span>
+            <span >7. Введіть ваш досвід роботи(повних років):</span>
+            
+            <input type="text" size="40" id="input-text" >
+        </div>
+
+
+
+
+
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>8. Вкажіть вашу стать</span><br/>
+             <div >
+            <input type="radio" name="radio6" id="radio61" class="radio" value="0" />
+            <label for="radio61">Чоловіча</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio6" id="radio62" class="radio" value="30" />
+            <label for="radio62">Жіноча</label>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="first-question" >
+        <hr><span id="name-people"></span>
+            <span >9. Вкажіть ваш вік.</span>
+            
+            <input type="text" size="40" id="input-text" >
+        </div>
+
+
+
+        
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>10. Вкажіть вашу освіту.</span><br/>
+             <div >
+            <input type="radio" name="radio7" id="radio71" class="radio" value="0" />
+            <label for="radio71">Вища освіта</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio7" id="radio72" class="radio" value="30" />
+            <label for="radio72">Середня освіта</label>
+            </div>
+
+             <div>
+            <input type="radio" name="radio7" id="radio73" class="radio" value="30" />
+            <label for="radio73">Саморозвиток</label>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="first-question">
+        <hr><span id="name-people"></span>
+            <span>11. Виберіть свою середню оцінку.</span><br/>
+             <div >
+            <input type="radio" name="radio8" id="radio81" class="radio" value="0" />
+            <label for="radio81">Дуже добре</label>
+            </div>
+
+            <div>
+            <input type="radio" name="radio8" id="radio82" class="radio" value="30" />
+            <label for="radio82">Добре</label>
+            </div>
+
+
+            <div>
+            <input type="radio" name="radio8" id="radio83" class="radio" value="30" />
+            <label for="radio83">Задовільно</label>
+            </div>
+
+             <div>
+            <input type="radio" name="radio8" id="radio84" class="radio" value="30" />
+            <label for="radio84">Незадовільно</label>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <br><br><br><br>
+        <button class="Result" OnClick="Global();">Завершити тест</button>
+        <button class="Result" OnClick="Person();">Наступний</button>
+       
+        
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script >
+var intPerson = 1;
+function Person(){
+	if (HowMany>intPerson){
+	var result=array[intPerson];
+	document.getElementById("name-people").innerHTML = result+"";
+	intPerson=intPerson+1;
+document.getElementById("radio11").checked=false;
+document.getElementById("radio12").checked=false;
+document.getElementById("radio21").checked=false;
+document.getElementById("radio22").checked=false;
+document.getElementById("radio23").checked=false;
+document.getElementById("radio24").checked=false;
+document.getElementById("radio31").checked=false;
+document.getElementById("radio32").checked=false;
+document.getElementById("radio33").checked=false;
+document.getElementById("radio41").checked=false;
+document.getElementById("radio42").checked=false;
+document.getElementById("radio43").checked=false;
+document.getElementById("radio44").checked=false;
+document.getElementById("radio51").checked=false;
+document.getElementById("radio52").checked=false;
+document.getElementById("radio61").checked=false;
+document.getElementById("radio62").checked=false;
+document.getElementById("radio71").checked=false;
+document.getElementById("radio72").checked=false;
+document.getElementById("radio73").checked=false;
+
+document.getElementById("radio81").checked=false;
+document.getElementById("radio82").checked=false;
+document.getElementById("radio83").checked=false;
+document.getElementById("radio84").checked=false;
+document.getElementsByTagName("input")[9].value="";
+document.getElementsByTagName("input")[16].value="";
+document.getElementsByTagName("input")[19].value="";
+}
+}
+var whatProf= prompt('Виберіть професію: 1 - Веб.дизайнер, 2 - Аналітик комп. мереж, 3 - Інженер з Іт, 4 - Алгоритміст, 5 - Оператор атомних електростанцій',  "1");
+
+var HowMany= prompt('Скільки чоловік будуть проходити тест?',  "Кількість чоловік");
+
+var array = [];
+
+
+for (var i=0; i<HowMany; i++){
+	
+	array[i]= prompt("Вкажіть ваше ім'я",i+1+" ім'я");
+}
+var result=array[0];
+document.getElementById("name-people").innerHTML = result+"";
+
+
+
+function Global(){
+
+
+	var WebDesire = 0;
+	var AnalComp = 0;
+	var InIT = 0;
+	var Algor = 0;
+	var Operator = 0;
+
+	/******************************************************/
+	
+	var firstInput = document.getElementById("radio11").checked;
+	var secondInput = document.getElementById("radio12").checked;
+	if (firstInput){
+		WebDesire = WebDesire + 7;
+		AnalComp = AnalComp + 5;
+		InIT = InIT + 5;
+		Algor = Algor + 6;
+		Operator =Operator + 5;
+	}
+	if (secondInput){
+		WebDesire = WebDesire - 3;
+		AnalComp = AnalComp - 3;
+		InIT = InIT - 3;
+		Algor = Algor - 3;
+		Operator =Operator - 3;
+	}
+	/************************************************/
+	var firstInput = document.getElementById("radio21").checked;
+	var secondInput = document.getElementById("radio22").checked;
+	var threeInput = document.getElementById("radio23").checked;
+	var fourthInput = document.getElementById("radio24").checked;
+	if (firstInput || secondInput ||threeInput ||fourthInput){
+		WebDesire = WebDesire + 10;
+		AnalComp = AnalComp + 10;
+		InIT = InIT + 10;
+		Algor = Algor + 10;
+		Operator =Operator + 10;
+	}
+/******************************************************/
+var firstInput = document.getElementById("radio31").checked;
+var secondInput = document.getElementById("radio32").checked;
+var threeInput = document.getElementById("radio33").checked;
+var fourthInput = 0;
+if (firstInput){
+	WebDesire = WebDesire + 8;
+		AnalComp = AnalComp + 8;
+		InIT = InIT + 8;
+		Algor = Algor + 8;
+		Operator =Operator + 8;
+}
+if (threeInput){
+		WebDesire = WebDesire - 5;
+		AnalComp = AnalComp - 5;
+		InIT = InIT - 5;
+		Algor = Algor - 5;
+		Operator =Operator - 5;
+}
+/********************************************************/
+var fisrtInput = document.getElementsByTagName("input")[9];
+		var valFirstInput = fisrtInput.value;
+if (valFirstInput<100){
+		WebDesire = WebDesire - 5;
+		AnalComp = AnalComp - 5;
+		InIT = InIT - 5;
+		Algor = Algor - 5;
+		Operator =Operator - 5;
+}
+if (valFirstInput>100&&valFirstInput<120){
+		WebDesire = WebDesire + 5;
+		AnalComp = AnalComp + 4;
+		InIT = InIT + 3;
+		Algor = Algor + 4;
+		Operator =Operator + 6;
+}
+if (valFirstInput>120){
+		WebDesire = WebDesire + 10;
+		AnalComp = AnalComp + 10;
+		InIT = InIT + 10;
+		Algor = Algor + 10;
+		Operator =Operator + 10;
+}
+/*******************************************************/
+	var firstInput = document.getElementById("radio41").checked;
+	var secondInput = document.getElementById("radio42").checked;
+	var threeInput = document.getElementById("radio43").checked;
+	var fourthInput = document.getElementById("radio44").checked;
+	if(firstInput){
+		WebDesire = WebDesire + 8;
+		AnalComp = AnalComp + 7;
+		InIT = InIT + 6;
+		Algor = Algor + 6;
+		Operator =Operator + 5;
+	}
+	if(secondInput){
+		WebDesire = WebDesire + 8;
+		AnalComp = AnalComp + 7;
+		InIT = InIT + 6;
+		Algor = Algor + 6;
+		Operator =Operator + 5;
+	}
+	if(threeInput){
+		WebDesire = WebDesire + 9;
+		AnalComp = AnalComp + 8;
+		InIT = InIT + 6;
+		Algor = Algor + 9;
+		Operator =Operator + 7;
+	}
+	if(fourthInput){
+		WebDesire = WebDesire + 9;
+		AnalComp = AnalComp + 6;
+		InIT = InIT + 7;
+		Algor = Algor + 9;
+		Operator =Operator + 5;
+	}
+/**********************************************************/
+	var firstInput = document.getElementById("radio51").checked;
+	var secondInput = document.getElementById("radio52").checked;
+	var threeInput = 0;
+	var fourthInput = 0;
+	if(firstInput){
+		WebDesire = WebDesire + 5;
+		AnalComp = AnalComp + 5;
+		InIT = InIT + 5;
+		Algor = Algor + 5;
+		Operator =Operator + 5;
+	}
+/************************************************************/
+var fisrtInput = document.getElementsByTagName("input")[16];
+		var valFirstInput = fisrtInput.value;
+if (valFirstInput<2){
+		WebDesire = WebDesire +1;
+		AnalComp = AnalComp - 1;
+		InIT = InIT - 1;
+		Algor = Algor;
+		Operator =Operator +1;
+}
+if (valFirstInput>3){
+		WebDesire = WebDesire + 5;
+		AnalComp = AnalComp + 4;
+		InIT = InIT + 3;
+		Algor = Algor + 4;
+		Operator =Operator + 4;
+}
+/*************************************************************/
+var firstInput = document.getElementById("radio61").checked;
+var secondInput = document.getElementById("radio62").checked;
+var threeInput = 0;
+var fourthInput = 0;
+	if(firstInput||secondInput){
+		WebDesire = WebDesire + 10;
+		AnalComp = AnalComp + 10;
+		InIT = InIT + 10;
+		Algor = Algor + 10;
+		Operator =Operator + 10;
+	}
+/************************************************************/
+var fisrtInput = document.getElementsByTagName("input")[19];
+var valFirstInput = fisrtInput.value;
+if (valFirstInput<20){
+		WebDesire = WebDesire;
+		AnalComp = AnalComp;
+		InIT = InIT;
+		Algor = Algor;
+		Operator =Operator;
+}
+if (valFirstInput>30&&valFirstInput<50){
+		WebDesire = WebDesire + 7;
+		AnalComp = AnalComp + 6;
+		InIT = InIT + 5;
+		Algor = Algor + 6;
+		Operator =Operator + 4;
+}
+/*************************************************************/
+var firstInput = document.getElementById("radio71").checked;
+var secondInput = document.getElementById("radio72").checked;
+var threeInput = document.getElementById("radio73").checked;
+var fourthInput = 0;
+	if(firstInput){
+		WebDesire = WebDesire + 10;
+		AnalComp = AnalComp + 10;
+		InIT = InIT + 10;
+		Algor = Algor + 10;
+		Operator =Operator + 10;
+	}
+	if(secondInput){
+		WebDesire = WebDesire + 7;
+		AnalComp = AnalComp + 7;
+		InIT = InIT + 7;
+		Algor = Algor + 7;
+		Operator =Operator + 7;
+	}
+	if(threeInput){
+		WebDesire = WebDesire + 5;
+		AnalComp = AnalComp + 5;
+		InIT = InIT + 4;
+		Algor = Algor + 4;
+		Operator =Operator + 4;
+	}
+/**************************************************************/
+var firstInput = document.getElementById("radio81").checked;
+var secondInput = document.getElementById("radio82").checked;
+var threeInput = document.getElementById("radio83").checked;
+var fourthInput = document.getElementById("radio84").checked;
+	if(firstInput){
+		WebDesire = WebDesire + 10;
+		AnalComp = AnalComp + 10;
+		InIT = InIT + 10;
+		Algor = Algor + 10;
+		Operator =Operator + 10;
+	}
+	if(secondInput){
+		WebDesire = WebDesire + 7;
+		AnalComp = AnalComp + 3;
+		InIT = InIT + 4;
+		Algor = Algor + 5;
+		Operator =Operator + 6;
+	}
+	if(threeInput){
+		WebDesire = WebDesire + 5;
+		AnalComp = AnalComp + 5;
+		InIT = InIT + 4;
+		Algor = Algor + 4;
+		Operator =Operator + 4;
+	}
+if(whatProf==1){
+	confirm("Ви Веб-дизайнер на "+WebDesire+"%");
+}
+if(whatProf==2){
+	confirm("Ви аналітик компю мереж на "+AnalComp+"%");
+}
+if(whatProf==3){
+	confirm("Ви інженер з ІТ технологій на "+InIT+"%");
+}
+if(whatProf==4){
+	confirm("Ви алгорифміст на "+Algor+"%");
+}
+if(whatProf==5){
+	confirm("Ви оператор атомних електростанцій	на "+Operator+"%");
+}
+	
+
+
+
+
+
+document.getElementById('test').reset();
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

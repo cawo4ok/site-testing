@@ -1,0 +1,333 @@
+﻿ html {
+    height: 100%; /* Высота веб-страницы */
+    background: #000 url(../images/1.gif) 
+          no-repeat right bottom; /* Путь к графическому файлу с фоном */
+    color: #fff; /* Белый цвет текста */
+    -webkit-background-size: 100%;
+-o-background-size: 100%;
+-moz-background-size: 100%;
+-ms-background-size: 100%;
+-khtml-background-size: 100%;
+background-size: 100%;
+   }
+
+*{
+	/* A universal CSS reset */
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-size:14px;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	scrollbar-3dlight-color: #ffebcd;
+scrollbar-arrow-color: #ffffff;
+scrollbar-base-color: #ffebcd;
+scrollbar-darkshadow-color: #f5f5dc;
+scrollbar-face-color: #b8860b;
+scrollbar-highlight-color: #f5f5dc;
+scrollbar-shadow-color: #f5f5dc;
+scrollbar-track-color: #f5f5dc;
+}
+#navigationMenu{
+	position: absolute;
+	left:400px;
+}
+#navigationMenu li{
+	list-style:none;
+	height:39px;
+	padding:2px;
+	width:40px;
+}
+
+#navigationMenu span{
+	/* Container properties */
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+	/* Text properties */
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#navigationMenu a{
+	background:url('../images/navigation.jpg') no-repeat;
+
+	height:39px;
+	width:38px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span{ width:auto; padding:0 20px;overflow:visible; }
+#navigationMenu a:hover{
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property */
+	-moz-box-shadow:0 0 5px #9ddff5;
+	-webkit-box-shadow:0 0 5px #9ddff5;
+	box-shadow:0 0 5px #9ddff5;
+}
+
+/* Green Button */
+
+#navigationMenu .home {	background-position:0 0;}
+#navigationMenu .home:hover {	background-position:0 -39px;}
+#navigationMenu .home span{
+	background-color:#7da315;
+	color:#3d4f0c;
+	text-shadow:1px 1px 0 #99bf31;
+}
+
+/* Blue Button */
+
+#navigationMenu .about { background-position:-38px 0;}
+#navigationMenu .about:hover { background-position:-38px -39px;}
+#navigationMenu .about span{
+	background-color:#1e8bb4;
+	color:#223a44;
+	text-shadow:1px 1px 0 #44a8d0;
+}
+
+/* Orange Button */
+
+#navigationMenu .services { background-position:-76px 0;}
+#navigationMenu .services:hover { background-position:-76px -39px;}
+#navigationMenu .services span{
+	background-color:#c86c1f;
+	color:#5a3517;
+	text-shadow:1px 1px 0 #d28344;
+}
+
+/* Yellow Button */
+
+
+/* The styles below are only needed for the demo page */
+
+#main{
+	margin:80px auto;
+	position:relative;
+	width:40px;
+}
+
+
+h1{
+	color:#fff;
+	font-size:30px;
+	font-weight:normal;
+	padding:60px 0 20px;
+	text-align:center;
+}
+
+h2{
+	font-weight:normal;
+	text-align:center;
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+a, a:visited,a:active {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+p.note{
+	color:#707070;
+	font-size:10px;
+	text-align:center;
+	margin:50px;
+}
+hr{
+	margin-bottom: 10px;
+}
+.test{
+	position: absolute;
+	width: 600px;
+	height: 500px;
+	background-color: #eee;
+	left:610px;
+	top:10px;
+	border-radius: 10px	10px 10px 10px ;
+	opacity: 0.98;
+	overflow:auto;
+}
+#test{
+	position: absolute;
+	width: 600px;
+	height: 500px;
+	background-color: #eee;
+	left:610px;
+	top:10px;
+	border-radius: 10px	10px 10px 10px ;
+	opacity: 0.98;
+	overflow:auto;
+}
+
+.test1{
+	position: absolute;
+	width: 300px;
+	height: 140px;
+	background-color: #778899;
+	left:610px;
+	top:10px;
+	border-radius: 20px	20px 20px 20px ;
+	opacity: 0.99;
+	overflow:auto;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 40px;
+}
+.test4{
+	position: relative;
+	width: 300px;
+	height: 140px;
+	background-color: #778899;
+	left:610px;
+	top:550px;
+	border-radius: 20px	20px 20px 20px ;
+	opacity: 0.99;
+	overflow:auto;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 40px;
+}
+.test1:hover{
+	background-color: #708090;
+	
+
+}
+div {
+	clear: both;
+	width: 50%;
+
+}
+span{
+	font-size: 20px;
+}
+.first-question{
+	width: 100%;
+	text-align: center;
+	height: 300px;
+}
+label {
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: 0px;
+	top:20px;
+	display: none;
+	
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	margin-top: 0.5em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+.first-question{
+	height: 100px;
+}
+#input-text{
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+	}
+.Result{
+	text-align: center;
+	padding: 20px;
+	margin-left: 37%;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+#first-input{
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+	width: 200px;
+	text-align: center;
+}
+.five-span{
+	height: 300px;
+}
